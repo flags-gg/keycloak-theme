@@ -1,4 +1,3 @@
-import "./main.css";
 import { Suspense, lazy } from "react";
 import type { KcContext } from "./KcContext";
 import { useI18n } from "./i18n";
@@ -11,6 +10,7 @@ const UserProfileFormFields = lazy(
 );
 
 const doMakeUserConfirmPassword = true;
+import "./main.css";
 
 export default function KcPage(props: { kcContext: KcContext }) {
   const { kcContext } = props;
