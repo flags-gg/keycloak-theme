@@ -28,8 +28,6 @@ jobs:
                   QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_2131535892 }}
                   QODANA_ENDPOINT: "https://qodana.cloud"
     update_release_draft:
-        needs:
-            - qodana
         runs-on: ubuntu-latest
         permissions:
             contents: write
